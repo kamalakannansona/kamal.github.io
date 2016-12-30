@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Happy New Year 2017</title>
+<link rel="stylesheet" type="text/css" href="graphics.css">
+<link rel="icon" type="jpg/png/gif" href="sathu.jpg">
+</head>
+<body>
+<div align='center'> 
+<b><font style='font-size: 15px;'>New Year Countdown</font></b>
+<br><br>
+<div id="contentdiv"> 
+<span id="nday"></span> <span>Days</span><br /><br />
+<span id="nhr"></span><span class="blink"> : </span>
+<span id="nmins"></span><span class="blink"> : </span> 
+<span id="nsecs"></span> </div><br><br> 
+<div id="dumdiv" align="center" style="font-size: 10px;color: #dadada;">
+ </div> 
+ </div>
+<script type="text/JavaScript">
+function startTimer() {
+var time = new Date();
+var cur_year=time.getFullYear();
+var month = time.getUTCMonth() + 1; //months from 1-12
+var day = time.getUTCDate();
+var n=cur_year+1;
+var newyr=new Date("January 1,"+n+" 00:00:00");
+var newyeartime=newyr.getTime();
+var todaytm=new Date();
+var todaytime=todaytm.getTime();
+var timeleft=newyeartime-todaytime;
+var leftdays = timeleft/86400000;
+var lefthr=23-todaytm.getHours();
+var leftmin=59-todaytm.getMinutes();
+var leftsec=59-todaytm.getSeconds();
+if ((Math.floor(leftdays) <= -1) || (month==1 && day==1)) 
+	{ 
+		document.getElementById('contentdiv').innerHTML="Happy New Year "+n;
+	}
+else { 
+		document.getElementById('nday').innerHTML= Math.floor(leftdays); 
+		document.getElementById('nhr').innerHTML= lefthr+" hrs"; 
+		document.getElementById('nmins').innerHTML= leftmin+" mins"; 
+		document.getElementById('nsecs').innerHTML= leftsec+" secs";
+	} 
+	t=setTimeout('startTimer()',999); }
+	startTimer();
+</script> 
+<h2><center>Happy New Year-2017</center></h2>
+<div>
+<div class="stars"><table width="100%" height="100%" cellpadding="5" cellspacing="10">
+  <tr>
+    <td width="225"><span class="blink1">Ranjitha</span></td>
+    <td><img src="1.jpg" class="blink3"></td>
+    <td width="276"><span class="blink2">Rashwanth</span></td>
+    <td width="247"><span class="blink3">Revathi</span></td>
+  </tr>
+  <tr>
+    <td><span class="blink2">Rushil Preethi</span></td>
+    <td><span class="blink3">Sudhakar</span></td>
+    <td><img src="2.jpg" class="blink3"></td>
+    <td><span class="blink1">Tamizh</span></td>
+  </tr>
+  <tr>
+    <td><span class="blink3">Shobnil</span></td>
+    <td><img src="3.jpg" class="blink2"></td>
+    <td><span class="blink1">Siva ranjani</span></td>
+    <td><span class="blink2">Sowmiya.M</span></td>
+  </tr>
+  <tr>
+    <td><span class="blink2">Sowmiya.S</span></td>
+    <td><span class="blink3">Tharani</span></td>
+    <td></td>
+    <td><span class="blink1">Surya</span></td>
+    <td><img src="4.jpg" class="blink3"></td>
+  </tr>
+  <tr>
+    <td><span class="blink1">Subhasini</span></td>
+    <td><img src="5.jpg" class="blink3"></td>
+    <td><span class="blink2">Soniya Priya</span></td>
+    <td><span class="blink3">Sathish.C</span></td>
+  </tr>
+  <tr>
+    <td><span class="blink3">Sathish.P</span></td>
+    <td><span class="blink1">Shwetha</span></td>
+    <td><img src="7.jpg" class="blink2"></td>
+    <td><span class="blink2">Thamsan</span></td>
+  </tr>
+  <tr>
+    <td><span class="blink2">Saranya</span></td>
+    <td><marquee><img src="m1.jpg" class="blink2"></marquee></td>
+    <td><span class="blink3">Sridevi</span></td>
+    <td><img src="8.jpg" class="blink2"></td>
+    <td><span class="blink1">Udhaya</span></td>
+  </tr>
+  <tr>
+    <td><img src="9.jpg" class="blink3"></td>
+    <td><span class="blink1">Umar</span></td>
+    <td><marquee direction="down"><img src="m4.jpg" class="blink2"></marquee></td>
+    <td><span class="blink2">Vaanmathi</span></td>
+    <td><span class="blink3">Vaishagh</span></td>
+  </tr>
+  <tr>
+    <td><span class="blink3">Venkatesh</span></td>
+    <td><span class="blink1">Vijayabaskar</span></td>
+    <td><img src="10.jpg" class="blink1"></td>
+    <td><span class="blink2">Vijaya Ragavan</span></td>
+  </tr>
+  <tr>
+    <td><span class="blink2">Vinitha</span></td>
+    <td><span class="blink3">Vidhya</span></td>
+    <td><span class="blink1">Visalakshi</span></td>
+    <td><img src="11.jpg" class="blink2"></td>
+  </tr>
+  <tr>
+    <td><span class="blink1">Vishnupriya</span></td>
+    <td><img src="12.jpg" class="blink1"></td>
+    <td><span class="blink2">Vishwa</span></td>
+    <td><span class="blink3">Raja</span></td>
+  </tr>
+  <tr>
+    <td><span class="blink3">Ramesh</span></td>
+    <td><span class="blink2">Sathis MSK</span></td>
+    <td><img src="13.jpg" class="blink3"></td>
+    <td><span class="blink1">Sayed</span></td>
+  </tr>
+  <tr>
+    <td><img src="14.jpg" class="blink2"></td>
+    <td><span class="blink2">Vasanth</span></td>
+    <td><span class="blink1">Venky</span></td>
+    <td><span class="blink3">Vicky.P</span></td>
+  </tr>
+  <tr>
+    <td><span class="blink1">Vicky.G</span></td>
+    <td><img src="15.jpg" class="blink1"></td>
+    <td><span class="blink2">Vicky.S</span></td>
+    <td colspan="2"><a href="www.facebook.com/rsk.sathu"><marquee><b>Copyright &copy; Sathish Sathu</b></marquee></a></td>
+    <td></td>
+  </tr>
+</table>
+</div>
+<marquee direction="right"><img src="m2.jpg" class="blink2"></marquee>
+<div class="twinkling"></div>
+<div class="clouds"></div>
+</div>
+<marquee direction="up"><img src="m3.jpg" class="blink2"></marquee>
+<!--<audio src="gopi.mp3" autoplay="autoplay" loop="loop"></audio>-->
+</body>
+</html>
